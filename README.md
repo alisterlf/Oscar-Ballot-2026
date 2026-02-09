@@ -1,11 +1,12 @@
-# Oscar Ballot 2025
+# Oscar Ballot 2026
 
-Welcome to the Oscar Ballot 2025 repository! This project is designed to help you keep track of your Oscar predictions and see how well you do compared to the actual results.
+Welcome to the Oscar Ballot 2026 repository! This project is designed to help you keep track of your Oscar predictions and see how well you do compared to the actual results.
 
 ## How to Use
 
 Navigate to the project GitHub Pages at:
-- https://alisterlf.github.io/Oscar-Ballot-2025/
+
+- https://alisterlf.github.io/Oscar-Ballot-2026/
 
 ## Categories
 
@@ -36,6 +37,5 @@ Navigate to the project GitHub Pages at:
 ## Contributing
 
 If you would like to contribute to this project, please fork the repository and create a pull request with your changes.
-
 
 Happy predicting!
