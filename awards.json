@@ -240,7 +240,7 @@
     "name": "Best Performance by an Actor in a Leading Role",
     "nominees": [
       {
-        "id": "nm3154303",
+        "id": "tt32916440",
         "name": "Timothée Chalamet",
         "url": "https://www.imdb.com/name/nm3154303/",
         "poster": "https://m.media-amazon.com/images/M/MV5BZTIyZWY4ZjktOGJiZi00NGFkLTllMjctZjJjMmNiMjIxOTY2XkEyXkFqcGc@._V1_QL100_UX1200_CR300,0,560,800_10,0,60,60_.jpg",
@@ -252,7 +252,7 @@
         ]
       },
       {
-        "id": "nm0000138",
+        "id": "tt30144839",
         "name": "Leonardo DiCaprio",
         "url": "https://www.imdb.com/name/nm0000138/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjI0MTg3MzI0M15BMl5BanBnXkFtZTcwMzQyODU2Mw@@._V1_QL100_UX600_CR0,0,560,800_.jpg",
@@ -264,7 +264,7 @@
         ]
       },
       {
-        "id": "nm0000160",
+        "id": "tt32536315",
         "name": "Ethan Hawke",
         "url": "https://www.imdb.com/name/nm0000160/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTk4NDMxMTI0MF5BMl5BanBnXkFtZTYwMjE3ODE0._V1_QL100_UX660_CR100,0,560,800_.jpg",
@@ -276,7 +276,7 @@
         ]
       },
       {
-        "id": "nm0430107",
+        "id": "tt31193180",
         "name": "Michael B. Jordan",
         "url": "https://www.imdb.com/name/nm0430107/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjExOTY3NzExM15BMl5BanBnXkFtZTgwOTg1OTAzMTE@._V1_QL100_UX560_CR0,0,560,800_.jpg",
@@ -288,7 +288,7 @@
         ]
       },
       {
-        "id": "nm0609944",
+        "id": "tt27847051",
         "name": "Wagner Moura",
         "url": "https://www.imdb.com/name/nm0609944/",
         "poster": "https://m.media-amazon.com/images/M/MV5BNzE0YTA3MWEtY2ZiYi00ZDFmLTgyY2QtMTUzZDIwOWU5NGFhXkEyXkFqcGc@._V1_QL100_UX660_CR100,0,560,800_.jpg",
@@ -305,7 +305,7 @@
     "name": "Best Performance by an Actress in a Leading Role",
     "nominees": [
       {
-        "id": "nm2976580",
+        "id": "tt14905854",
         "name": "Jessie Buckley",
         "url": "https://www.imdb.com/name/nm2976580/",
         "poster": "https://m.media-amazon.com/images/M/MV5BNTFlZWIwMjQtNmNiOS00ZDc3LTkxZDgtYTE0YjQ3ODU5ZGIyXkEyXkFqcGc@._V1_QL100_UX560_CR0,0,560,800_.jpg",
@@ -317,19 +317,19 @@
         ]
       },
       {
-        "id": "nm0126284",
+        "id": "tt18382850",
         "name": "Rose Byrne",
         "url": "https://www.imdb.com/name/nm0126284/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTc0MDA2Njc0OF5BMl5BanBnXkFtZTcwNzc3NDU3Mw@@._V1_QL100_UX590_CR0,0,560,800_.jpg",
         "details": [
           {
             "id": "tt18382850",
-            "name": "If I Had Legs I'd Kick You"
+            "name": "If I Had Legs I\u0027d Kick You"
           }
         ]
       },
       {
-        "id": "nm4561559",
+        "id": "tt27714581",
         "name": "Renate Reinsve",
         "url": "https://www.imdb.com/name/nm4561559/",
         "poster": "https://m.media-amazon.com/images/M/MV5BZDliODgyNzctZjE3ZC00NDA1LWFhYTItZWNlMTcwMzc4MjFmXkEyXkFqcGc@._V1_QL100_UX660_CR0,0,560,800_.jpg",
@@ -341,7 +341,7 @@
         ]
       },
       {
-        "id": "nm1297015",
+        "id": "tt12300742",
         "name": "Emma Stone",
         "url": "https://www.imdb.com/name/nm1297015/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjI4NjM1NDkyN15BMl5BanBnXkFtZTgwODgyNTY1MjE@._V1_QL100_UX560_CR0,0,560,800_.jpg",
@@ -353,7 +353,7 @@
         ]
       },
       {
-        "id": "nm0005028",
+        "id": "tt30343021",
         "name": "Kate Hudson",
         "url": "https://www.imdb.com/name/nm0005028/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTA1NTk0MjMyOTFeQTJeQWpwZ15BbWU3MDA4NzEzMTM@._V1_QL100_UX660_CR0,0,560,800_.jpg",
@@ -370,7 +370,7 @@
     "name": "Best Performance by an Actor in a Supporting Role",
     "nominees": [
       {
-        "id": "nm0001125",
+        "id": "tt30144839",
         "name": "Benicio Del Toro",
         "url": "https://www.imdb.com/name/nm0001125/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTkzODQ4NzU1N15BMl5BanBnXkFtZTcwOTUzMzc5Mg@@._V1_QL100_UX660_CR0,0,560,800_.jpg",
@@ -382,7 +382,7 @@
         ]
       },
       {
-        "id": "nm0000576",
+        "id": "tt30144839",
         "name": "Sean Penn",
         "url": "https://www.imdb.com/name/nm0000576/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTc1NjMzMjY3NF5BMl5BanBnXkFtZTcwMzkxNjQzMg@@._V1_QL100_UX560_CR0,0,560,800_.jpg",
@@ -394,7 +394,7 @@
         ]
       },
       {
-        "id": "nm0001745",
+        "id": "tt27714581",
         "name": "Stellan Skarsgård",
         "url": "https://www.imdb.com/name/nm0001745/",
         "poster": "https://m.media-amazon.com/images/M/MV5BNTA5MmNiNzMtOTQ1MC00ZDc5LTg3NzItNTZjNWY1MjI2MGM3XkEyXkFqcGc@._V1_QL100_UX1000_CR150,0,560,800_7,0,60,60_.jpg",
@@ -406,7 +406,7 @@
         ]
       },
       {
-        "id": "nm8624059",
+        "id": "tt1312221",
         "name": "Jacob Elordi",
         "url": "https://www.imdb.com/name/nm8624059/",
         "poster": "https://m.media-amazon.com/images/M/MV5BOTUyNTBhYzYtNGEyNC00NjlhLWI4YWUtNzA5OTg1YjkyZDQxXkEyXkFqcGc@._V1_QL100_UX1560_CR400,0,560,800_.jpg",
@@ -418,7 +418,7 @@
         ]
       },
       {
-        "id": "nm0005148",
+        "id": "tt31193180",
         "name": "Delroy Lindo",
         "url": "https://www.imdb.com/name/nm0005148/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjEzOTg3NDQ5OF5BMl5BanBnXkFtZTYwMzA3NTY2._V1_QL100_UX560_CR0,0,560,800_.jpg",
@@ -435,7 +435,7 @@
     "name": "Best Performance by an Actress in a Supporting Role",
     "nominees": [
       {
-        "id": "nm1102577",
+        "id": "tt27714581",
         "name": "Elle Fanning",
         "url": "https://www.imdb.com/name/nm1102577/",
         "poster": "https://m.media-amazon.com/images/M/MV5BYTJhZTg3ZDAtMDM3Mi00NGQxLWIwZTctZWRiODdjNTJiMzAxXkEyXkFqcGc@._V1_QL100_UX1200_CR300,0,560,800_.jpg",
@@ -447,7 +447,7 @@
         ]
       },
       {
-        "id": "nm6635521",
+        "id": "tt27714581",
         "name": "Inga Ibsdotter Lilleaas",
         "url": "https://www.imdb.com/name/nm6635521/",
         "poster": "https://m.media-amazon.com/images/M/MV5BNWUzOGU4YmEtMDAwYy00OWQ4LTkyYmQtMGU4OWJmMTgyM2M0XkEyXkFqcGc@._V1_QL100_UX560_CR0,0,560,800_.jpg",
@@ -459,7 +459,7 @@
         ]
       },
       {
-        "id": "nm0001496",
+        "id": "tt26581740",
         "name": "Amy Madigan",
         "url": "https://www.imdb.com/name/nm0001496/",
         "poster": "https://m.media-amazon.com/images/M/MV5BM2UyYWQ0OTMtZjU2OC00MzE3LTgxYTAtZmQ2YzM4NTI4OGZjXkEyXkFqcGc@._V1_QL100_UX560_CR0,0,560,800_.jpg",
@@ -471,7 +471,7 @@
         ]
       },
       {
-        "id": "nm3692520",
+        "id": "tt30144839",
         "name": "Teyana Taylor",
         "url": "https://www.imdb.com/name/nm3692520/",
         "poster": "https://m.media-amazon.com/images/M/MV5BZmI4OTdhZWQtNjU0Ni00YzQzLTk1NGMtZjVkMzMxZGJjNzNiXkEyXkFqcGc@._V1_QL100_UX1200_CR290,0,560,800_.jpg",
@@ -483,7 +483,7 @@
         ]
       },
       {
-        "id": "nm2148911",
+        "id": "tt31193180",
         "name": "Wunmi Mosaku",
         "url": "https://www.imdb.com/name/nm2148911/",
         "poster": "https://m.media-amazon.com/images/M/MV5BZTViMjhmNzYtZjNlYi00ZDk3LTlkODEtNGEyYjc4NjEyYWVkXkEyXkFqcGc@._V1_QL100_UX560_CR0,0,560,800_.jpg",
@@ -500,7 +500,7 @@
     "name": "Best Achievement in Directing",
     "nominees": [
       {
-        "id": "nm2125482",
+        "id": "tt14905854",
         "name": "Chloé Zhao",
         "url": "https://www.imdb.com/name/nm2125482/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMThiYmE2NDYtYjg0NS00ZDAwLWJmODUtYzlhYzFhNGM1NTJhXkEyXkFqcGc@._V1_QL100_UX560_CR0,0,560,800_.jpg",
@@ -512,7 +512,7 @@
         ]
       },
       {
-        "id": "nm0000759",
+        "id": "tt30144839",
         "name": "Paul Thomas Anderson",
         "url": "https://www.imdb.com/name/nm0000759/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTQwNjc5NjY2NV5BMl5BanBnXkFtZTcwNDIxMzg1MQ@@._V1_QL100_UX560_CR0,0,560,800_.jpg",
@@ -524,7 +524,7 @@
         ]
       },
       {
-        "id": "nm3363032",
+        "id": "tt31193180",
         "name": "Ryan Coogler",
         "url": "https://www.imdb.com/name/nm3363032/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMjI2MTYyNzU1MV5BMl5BanBnXkFtZTgwNTE4NzI5NzE@._V1_QL100_UX560_CR0,0,560,800_.jpg",
@@ -536,7 +536,7 @@
         ]
       },
       {
-        "id": "nm1258686",
+        "id": "tt27714581",
         "name": "Joachim Trier",
         "url": "https://www.imdb.com/name/nm1258686/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTkxMjcxMDI5OF5BMl5BanBnXkFtZTYwMDYwMzU0._V1_QL100_UX660_CR0,0,560,800_.jpg",
@@ -548,7 +548,7 @@
         ]
       },
       {
-        "id": "nm1343394",
+        "id": "tt32916440",
         "name": "Josh Safdie",
         "url": "https://www.imdb.com/name/nm1343394/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTUyMzgzMzE2MV5BMl5BanBnXkFtZTgwMjkxMDQwMzI@._V1_QL100_UX560_CR0,0,560,800_.jpg",
@@ -681,7 +681,7 @@
         "details": [
           {
             "id": "nm9133641",
-            "name": "Maggie O'Farrell"
+            "name": "Maggie O\u0027Farrell"
           },
           {
             "id": "nm2125482",
@@ -1670,7 +1670,7 @@
     "nominees": [
       {
         "id": "tt39232815",
-        "name": "Butcher's Stain",
+        "name": "Butcher\u0027s Stain",
         "url": "https://www.imdb.com/title/tt39232815/",
         "poster": "https://m.media-amazon.com/images/M/MV5BYTQ2NDM4MzYtYjM5ZS00YTcyLWI2ZjktN2U4YjdmMzAxZDEzXkEyXkFqcGc@._V1_QL100_UX560_CR0,0,560,800_8,0,90,133_.jpg",
         "details": [
@@ -1702,7 +1702,7 @@
       },
       {
         "id": "tt31171760",
-        "name": "Jane Austen's Period Drama",
+        "name": "Jane Austen\u0027s Period Drama",
         "url": "https://www.imdb.com/title/tt31171760/",
         "poster": "https://m.media-amazon.com/images/M/MV5BMDE1MTc4Y2ItZDRkMi00YzllLTlmNTUtZjA3MzQ5ODcxY2UyXkEyXkFqcGc@._V1_QL75_UX90_CR0,1,90,133_.jpg",
         "details": [
