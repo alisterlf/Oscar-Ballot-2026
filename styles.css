@@ -169,7 +169,7 @@ a + a::before {
   margin-bottom: 0.75rem;
 }
 .pred-table {
-  width: auto;
+  width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   margin-bottom: 1rem;
