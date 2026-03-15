@@ -224,6 +224,11 @@ a + a::before {
 .pred-result .pending {
   color: #666;
 }
+.pred-counter {
+  color: #999;
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+}
 @media (max-width: 800px) {
   .pred-table {
     font-size: 0.75rem;

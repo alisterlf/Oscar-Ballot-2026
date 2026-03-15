@@ -124,7 +124,8 @@ function renderPredictions() {
   const radios = Array.from(document.querySelectorAll('input[type="radio"]'));
   const checkedRadios = radios.filter((radio) => radio.checked);
   if (!checkedRadios.length) {
-    document.querySelector("#predictionsList").innerHTML = "<p>No predictions yet.</p>";
+    const totalCategories = document.querySelectorAll(".award").length;
+    document.querySelector("#predictionsList").innerHTML = `<p>No predictions yet.</p><div class="pred-counter">0 / ${totalCategories}</div>`;
     return;
   }
   let correctCount = 0;
@@ -151,8 +152,10 @@ function renderPredictions() {
     }
     return `<tr class="${rowClass}"><td class="pred-category">${category}</td><td class="pred-pick">${title}</td><td class="pred-result">${resultHtml}</td></tr>`;
   });
+  const totalCategories = document.querySelectorAll(".award").length;
+  const counterHtml = `<div class="pred-counter">${checkedRadios.length} / ${totalCategories}</div>`;
   const scoreHtml = totalWithWinner ? `<div class="pred-score">${correctCount} / ${totalWithWinner} correct</div>` : "";
-  const html = `${scoreHtml}<table class="pred-table"><thead><tr><th>Category</th><th>Prediction</th><th>Result</th></tr></thead><tbody>${rows.join("")}</tbody></table>`;
+  const html = `${scoreHtml}<table class="pred-table"><thead><tr><th>Category</th><th>Prediction</th><th>Result</th></tr></thead><tbody>${rows.join("")}</tbody></table>${counterHtml}`;
   document.querySelector("#predictionsList").innerHTML = html;
 }
 function sharePredictions() {
