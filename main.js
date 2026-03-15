@@ -35,8 +35,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (radio.checked) {
         localStorage.setItem(radio.name, radio.value);
       }
+      renderPredictions();
     });
   });
+  renderPredictions();
 });
 function setCheckboxOfSameMovie(movieId, checked) {
   const checkboxes = Array.from(document.querySelectorAll('input[type="checkbox"]'));
@@ -69,6 +71,17 @@ function calcWatchedMoviesPerCategory() {
     const watchedPercentage = `${totalWatchedMovies} / ${totalMovies} (${percentage}%)`;
     category.querySelector(".watchedPercentage").textContent = watchedPercentage;
   });
+}
+function renderPredictions() {
+  const radios = Array.from(document.querySelectorAll('input[type="radio"]'));
+  const checkedRadios = radios.filter((radio) => radio.checked);
+  const items = checkedRadios.map((radio) => {
+    const category = radio.closest(".award").querySelector("h2").innerText;
+    const title = radio.closest("figure").querySelector("h3").innerText;
+    return `<li>🎬 ${category}: 🏆 ${title}</li>`;
+  });
+  const list = items.length ? `<ul>${items.join("")}</ul>` : "<p>No predictions yet.</p>";
+  document.querySelector("#predictionsList").innerHTML = list;
 }
 function sharePredictions() {
   const radios = Array.from(document.querySelectorAll('input[type="radio"]'));
