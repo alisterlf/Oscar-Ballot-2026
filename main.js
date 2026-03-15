@@ -2,8 +2,11 @@ Handlebars.registerHelper("generateIdFromCategoryTitle", function (title) {
   return title.replace(/\s/g, "-").toLowerCase();
 });
 Handlebars.registerHelper("getImdbId", function (url) {
-  const match = url.match(/\/(title|name)\/(tt\d+|nm\d+)/i);
-  return match ? match[2] : null;
+  const imdbMatch = url.match(/\/(title|name)\/(tt\d+|nm\d+)/i);
+  if (imdbMatch) return imdbMatch[2];
+  const ytMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]+)/i);
+  if (ytMatch) return ytMatch[1];
+  return null;
 });
 document.addEventListener("DOMContentLoaded", async () => {
   const response = await fetch("./awards.json");
