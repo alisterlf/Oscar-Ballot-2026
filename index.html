@@ -16,6 +16,15 @@
       {{#each this}}
       <section class="award">
         <h2>{{name}}</h2>
+        <label class="winner-select">
+          Winner:
+          <select data-category="{{generateIdFromCategoryTitle name}}">
+            <option value="">-- Select winner --</option>
+            {{#each nominees}}
+            <option value="{{getImdbId url}}">{{name}}</option>
+            {{/each}}
+          </select>
+        </label>
         <p>Watched in this category: <span class="watchedPercentage"></span></p>
         <section class="nominees">
           {{#each nominees}}
