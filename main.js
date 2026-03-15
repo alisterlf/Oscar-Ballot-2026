@@ -54,6 +54,20 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
   renderPredictions();
 });
+function clearPredictions() {
+  document.querySelectorAll('input[type="radio"]').forEach((radio) => {
+    if (radio.checked) {
+      radio.checked = false;
+      localStorage.removeItem(radio.name);
+    }
+  });
+  document.querySelectorAll("select[data-category]").forEach((select) => {
+    select.value = "";
+    highlightWinner(select);
+    localStorage.removeItem("winner-" + select.dataset.category);
+  });
+  renderPredictions();
+}
 function setCheckboxOfSameMovie(movieId, checked) {
   const checkboxes = Array.from(document.querySelectorAll('input[type="checkbox"]'));
   checkboxes.forEach((checkbox) => {
@@ -134,9 +148,7 @@ function renderPredictions() {
     }
     return `<tr class="${rowClass}"><td class="pred-category">${category}</td><td class="pred-pick">${title}</td><td class="pred-result">${resultHtml}</td></tr>`;
   });
-  const scoreHtml = totalWithWinner
-    ? `<div class="pred-score">${correctCount} / ${totalWithWinner} correct</div>`
-    : "";
+  const scoreHtml = totalWithWinner ? `<div class="pred-score">${correctCount} / ${totalWithWinner} correct</div>` : "";
   const html = `${scoreHtml}<table class="pred-table"><thead><tr><th>Category</th><th>Prediction</th><th>Result</th></tr></thead><tbody>${rows.join("")}</tbody></table>`;
   document.querySelector("#predictionsList").innerHTML = html;
 }

@@ -1,6 +1,6 @@
 [
   {
-    "name": "Best Motion Picture of the Year",
+    "name": "Motion Picture of the Year",
     "nominees": [
       {
         "id": "tt16311594",
@@ -275,7 +275,7 @@
     ]
   },
   {
-    "name": "Best Performance by an Actor in a Leading Role",
+    "name": "Actor in a Leading Role",
     "nominees": [
       {
         "id": "tt32916440",
@@ -345,7 +345,7 @@
     ]
   },
   {
-    "name": "Best Performance by an Actress in a Leading Role",
+    "name": "Actress in a Leading Role",
     "nominees": [
       {
         "id": "tt14905854",
@@ -415,7 +415,7 @@
     ]
   },
   {
-    "name": "Best Performance by an Actor in a Supporting Role",
+    "name": "Actor in a Supporting Role",
     "nominees": [
       {
         "id": "tt30144839",
@@ -485,7 +485,7 @@
     ]
   },
   {
-    "name": "Best Performance by an Actress in a Supporting Role",
+    "name": "Actress in a Supporting Role",
     "nominees": [
       {
         "id": "tt27714581",
@@ -555,7 +555,7 @@
     ]
   },
   {
-    "name": "Best Achievement in Directing",
+    "name": "Directing",
     "nominees": [
       {
         "id": "tt14905854",
@@ -625,7 +625,7 @@
     ]
   },
   {
-    "name": "Best Original Screenplay",
+    "name": "Original Screenplay",
     "nominees": [
       {
         "id": "tt32536315",
@@ -720,7 +720,7 @@
     ]
   },
   {
-    "name": "Best Adapted Screenplay",
+    "name": "Adapted Screenplay",
     "nominees": [
       {
         "id": "tt12300742",
@@ -800,7 +800,7 @@
     ]
   },
   {
-    "name": "Best Achievement in Cinematography",
+    "name": "Cinematography",
     "nominees": [
       {
         "id": "tt1312221",
@@ -870,7 +870,7 @@
     ]
   },
   {
-    "name": "Best Achievement in Film Editing",
+    "name": "Film Editing",
     "nominees": [
       {
         "id": "tt16311594",
@@ -945,7 +945,7 @@
     ]
   },
   {
-    "name": "Best Achievement in Production Design",
+    "name": "Production Design",
     "nominees": [
       {
         "id": "tt1312221",
@@ -1040,7 +1040,7 @@
     ]
   },
   {
-    "name": "Best Achievement in Costume Design",
+    "name": "Costume Design",
     "nominees": [
       {
         "id": "tt1312221",
@@ -1110,7 +1110,7 @@
     ]
   },
   {
-    "name": "Best Sound",
+    "name": "Sound",
     "nominees": [
       {
         "id": "tt16311594",
@@ -1260,7 +1260,7 @@
     ]
   },
   {
-    "name": "Best Achievement in Makeup and Hairstyling",
+    "name": "Makeup and Hairstyling",
     "nominees": [
       {
         "id": "tt1312221",
@@ -1375,7 +1375,7 @@
     ]
   },
   {
-    "name": "Best Achievement in Visual Effects",
+    "name": "Visual Effects",
     "nominees": [
       {
         "id": "tt1757678",
@@ -1520,7 +1520,7 @@
     ]
   },
   {
-    "name": "Best Documentary Feature",
+    "name": "Documentary Feature",
     "nominees": [
       {
         "id": "tt35307139",
@@ -1645,7 +1645,7 @@
     ]
   },
   {
-    "name": "Best Animated Feature Film",
+    "name": "Animated Feature Film",
     "nominees": [
       {
         "id": "tt14883538",
@@ -1780,7 +1780,7 @@
     ]
   },
   {
-    "name": "Best Animated Short Film",
+    "name": "Animated Short Film",
     "nominees": [
       {
         "id": "tt30970587",
@@ -1870,7 +1870,7 @@
     ]
   },
   {
-    "name": "Best Live Action Short Film",
+    "name": "Live Action Short Film",
     "nominees": [
       {
         "id": "tt39232815",
@@ -1965,7 +1965,7 @@
     ]
   },
   {
-    "name": "Best Documentary Short Film",
+    "name": "Documentary Short Film",
     "nominees": [
       {
         "id": "tt37798645",
@@ -2195,7 +2195,7 @@
     ]
   },
   {
-    "name": "Best International Feature Film",
+    "name": "International Feature Film",
     "nominees": [
       {
         "id": "tt27847051",
@@ -2235,7 +2235,7 @@
     ]
   },
   {
-    "name": "Best Casting",
+    "name": "Casting",
     "nominees": [
       {
         "id": "tt14905854",
