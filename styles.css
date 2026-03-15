@@ -26,7 +26,9 @@ button {
   font-weight: 600;
   border-radius: 2rem;
   cursor: pointer;
-  transition: transform 0.15s, box-shadow 0.15s;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
   box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
 }
 button:hover {
@@ -61,13 +63,58 @@ button:active {
   margin: 0;
   padding: 1rem;
 }
-.nominees > figure label {
-  display: block;
-  padding: 0.25rem;
-  background-color: #888;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.nominees > figure .icon-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #777;
   border-radius: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition:
+    background-color 0.15s,
+    color 0.15s;
+  user-select: none;
+}
+.nominees > figure .icon-btn:hover {
+  background-color: #999;
+  color: #000;
+}
+.icon-btn .icon-on {
+  display: none;
+}
+.icon-btn .icon-off {
+  display: inline;
+}
+input[type="radio"]:checked + .icon-btn .icon-on,
+input[type="checkbox"]:checked + .icon-btn .icon-on {
+  display: inline;
+}
+input[type="radio"]:checked + .icon-btn .icon-off,
+input[type="checkbox"]:checked + .icon-btn .icon-off {
+  display: none;
+}
+input[type="radio"]:checked + .icon-btn.prediction {
+  background-color: #d4af37;
   color: #222;
+}
+input[type="checkbox"]:checked + .icon-btn.watched {
+  background-color: #4a9;
+  color: #fff;
 }
 .nominees > figure img {
   display: block;
@@ -98,32 +145,76 @@ a:hover {
 a + a::before {
   content: ", ";
 }
-#predictionsList ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-#predictionsList li {
-  background-color: #333;
-  color: #eee;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  font-size: 0.9rem;
-}
 #predictionsList p {
   color: #888;
   font-style: italic;
 }
-#predictionsList li.correct {
-  background-color: #2a5e2a;
+.pred-score {
+  background: linear-gradient(135deg, #d4af37, #b8962e);
+  color: #222;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+.pred-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.pred-table th {
+  background-color: #444;
+  color: #ccc;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.pred-table td {
+  padding: 0.5rem 0.75rem;
+  border-top: 1px solid #3a3a3a;
+  color: #ddd;
+}
+.pred-table tbody tr {
+  background-color: #2c2c2c;
+}
+.pred-table tbody tr:nth-child(even) {
+  background-color: #333;
+}
+.pred-table tbody tr.correct {
+  background-color: #2a4a2a;
+}
+.pred-table tbody tr.wrong {
+  background-color: #4a2a2a;
+}
+.pred-category {
+  white-space: nowrap;
+  font-weight: 600;
+  color: #bbb;
+}
+.pred-pick {
+  color: #fff;
+  font-weight: 600;
+}
+.pred-result .result {
+  white-space: nowrap;
+}
+.pred-result .result.correct {
   color: #8f8;
 }
-#predictionsList li.wrong {
-  background-color: #5e2a2a;
+.pred-result .result.wrong {
   color: #f88;
+}
+.pred-result .pending {
+  color: #666;
 }
 .winner-select {
   color: #eee;

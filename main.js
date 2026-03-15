@@ -106,28 +106,39 @@ function highlightWinner(select) {
 function renderPredictions() {
   const radios = Array.from(document.querySelectorAll('input[type="radio"]'));
   const checkedRadios = radios.filter((radio) => radio.checked);
-  const items = checkedRadios.map((radio) => {
+  if (!checkedRadios.length) {
+    document.querySelector("#predictionsList").innerHTML = "<p>No predictions yet.</p>";
+    return;
+  }
+  let correctCount = 0;
+  let totalWithWinner = 0;
+  const rows = checkedRadios.map((radio) => {
     const award = radio.closest(".award");
     const category = award.querySelector("h2").innerText;
     const title = radio.closest("figure").querySelector("h3").innerText;
     const winnerSelect = award.querySelector("select[data-category]");
     const winnerId = winnerSelect ? winnerSelect.value : "";
-    let status = "";
-    let cssClass = "";
+    let resultHtml = '<span class="pending">—</span>';
+    let rowClass = "";
     if (winnerId) {
+      totalWithWinner++;
       const winnerName = winnerSelect.options[winnerSelect.selectedIndex].text;
       if (radio.value === winnerId) {
-        status = " ✅ Correct!";
-        cssClass = "correct";
+        correctCount++;
+        resultHtml = '<span class="result correct">✅ Correct</span>';
+        rowClass = "correct";
       } else {
-        status = ` ❌ Winner: ${winnerName}`;
-        cssClass = "wrong";
+        resultHtml = `<span class="result wrong">❌ ${winnerName}</span>`;
+        rowClass = "wrong";
       }
     }
-    return `<li class="${cssClass}">🎬 ${category}: 🏆 ${title}${status}</li>`;
+    return `<tr class="${rowClass}"><td class="pred-category">${category}</td><td class="pred-pick">${title}</td><td class="pred-result">${resultHtml}</td></tr>`;
   });
-  const list = items.length ? `<ul>${items.join("")}</ul>` : "<p>No predictions yet.</p>";
-  document.querySelector("#predictionsList").innerHTML = list;
+  const scoreHtml = totalWithWinner
+    ? `<div class="pred-score">${correctCount} / ${totalWithWinner} correct</div>`
+    : "";
+  const html = `${scoreHtml}<table class="pred-table"><thead><tr><th>Category</th><th>Prediction</th><th>Result</th></tr></thead><tbody>${rows.join("")}</tbody></table>`;
+  document.querySelector("#predictionsList").innerHTML = html;
 }
 function sharePredictions() {
   const radios = Array.from(document.querySelectorAll('input[type="radio"]'));
