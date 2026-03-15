@@ -1,6 +1,6 @@
 [
   {
-    "name": "Motion Picture of the Year",
+    "name": "Best Picture",
     "nominees": [
       {
         "id": "tt16311594",
@@ -1520,7 +1520,7 @@
     ]
   },
   {
-    "name": "Documentary Feature",
+    "name": "Documentary Feature Film",
     "nominees": [
       {
         "id": "tt35307139",
