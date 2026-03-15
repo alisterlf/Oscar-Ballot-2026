@@ -38,6 +38,15 @@ button:hover {
 button:active {
   transform: translateY(0);
 }
+.btn-clear {
+  background: #555;
+  color: #ccc;
+  box-shadow: none;
+}
+.btn-clear:hover {
+  background: #666;
+  box-shadow: none;
+}
 .award {
   padding-bottom: 1rem;
   border-bottom: 0.5rem dashed #eee;
