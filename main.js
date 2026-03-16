@@ -157,14 +157,12 @@ function renderPredictions() {
       html: `<tr class="${rowClass}"><td class="pred-category">${category}</td><td class="pred-pick">${title}</td><td class="pred-result">${resultHtml}</td></tr>`,
     };
   });
-  // Sort so categories with winners come first
-  const sortedRows = rowsData
-    .sort((a, b) => {
-      if (a.winnerId && !b.winnerId) return -1;
-      if (!a.winnerId && b.winnerId) return 1;
-      return 0;
-    })
-    .map((row) => row.html);
+  // Split into with-winner and without-winner, sort both alphabetically by category
+  const withWinner = rowsData.filter(row => row.winnerId)
+    .sort((a, b) => a.html.localeCompare(b.html));
+  const withoutWinner = rowsData.filter(row => !row.winnerId)
+    .sort((a, b) => a.html.localeCompare(b.html));
+  const sortedRows = [...withWinner, ...withoutWinner].map(row => row.html);
 
   const totalCategories = document.querySelectorAll(".award").length;
   const counterHtml = `<div class="pred-counter">${checkedRadios.length} / ${totalCategories}</div>`;
