@@ -158,11 +158,9 @@ function renderPredictions() {
     };
   });
   // Split into with-winner and without-winner, sort both alphabetically by category
-  const withWinner = rowsData.filter(row => row.winnerId)
-    .sort((a, b) => a.html.localeCompare(b.html));
-  const withoutWinner = rowsData.filter(row => !row.winnerId)
-    .sort((a, b) => a.html.localeCompare(b.html));
-  const sortedRows = [...withWinner, ...withoutWinner].map(row => row.html);
+  const withWinner = rowsData.filter((row) => row.winnerId).sort((a, b) => a.html.localeCompare(b.html));
+  const withoutWinner = rowsData.filter((row) => !row.winnerId).sort((a, b) => a.html.localeCompare(b.html));
+  const sortedRows = [...withWinner, ...withoutWinner].map((row) => row.html);
 
   const totalCategories = document.querySelectorAll(".award").length;
   const counterHtml = `<div class="pred-counter">${checkedRadios.length} / ${totalCategories}</div>`;
