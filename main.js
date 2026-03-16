@@ -52,9 +52,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     select.addEventListener("change", () => {
       localStorage.setItem("winner-" + select.dataset.category, select.value);
       highlightWinner(select);
+      reorderAwards();
       renderPredictions();
     });
   });
+  reorderAwards();
   renderPredictions();
 });
 function clearPredictions() {
@@ -130,7 +132,7 @@ function renderPredictions() {
   }
   let correctCount = 0;
   let totalWithWinner = 0;
-  const rows = checkedRadios.map((radio) => {
+  const rowsData = checkedRadios.map((radio) => {
     const award = radio.closest(".award");
     const category = award.querySelector("h2").innerText;
     const title = radio.closest("figure").querySelector("h3").innerText;
@@ -150,13 +152,47 @@ function renderPredictions() {
         rowClass = "wrong";
       }
     }
-    return `<tr class="${rowClass}"><td class="pred-category">${category}</td><td class="pred-pick">${title}</td><td class="pred-result">${resultHtml}</td></tr>`;
+    return {
+      winnerId,
+      html: `<tr class="${rowClass}"><td class="pred-category">${category}</td><td class="pred-pick">${title}</td><td class="pred-result">${resultHtml}</td></tr>`,
+    };
   });
+  // Sort so categories with winners come first
+  const sortedRows = rowsData
+    .sort((a, b) => {
+      if (a.winnerId && !b.winnerId) return -1;
+      if (!a.winnerId && b.winnerId) return 1;
+      return 0;
+    })
+    .map((row) => row.html);
+
   const totalCategories = document.querySelectorAll(".award").length;
   const counterHtml = `<div class="pred-counter">${checkedRadios.length} / ${totalCategories}</div>`;
   const scoreHtml = totalWithWinner ? `<div class="pred-score">${correctCount} / ${totalWithWinner} correct</div>` : "";
-  const html = `${scoreHtml}<table class="pred-table"><thead><tr><th>Category</th><th>Prediction</th><th>Result</th></tr></thead><tbody>${rows.join("")}</tbody></table>${counterHtml}`;
+  const html = `${scoreHtml}<table class="pred-table"><thead><tr><th>Category</th><th>Prediction</th><th>Result</th></tr></thead><tbody>${sortedRows.join("")}</tbody></table>${counterHtml}`;
   document.querySelector("#predictionsList").innerHTML = html;
+}
+
+function reorderAwards() {
+  const awardsContainer = document.querySelector("#awardsContainer") || document.body;
+  const awards = Array.from(document.querySelectorAll(".award"));
+  const group1 = [];
+  const group2 = [];
+  awards.forEach((award) => {
+    const select = award.querySelector("select[data-category]");
+    if (select && select.value) {
+      group2.push(award);
+    } else {
+      group1.push(award);
+    }
+  });
+  group1.sort((a, b) => {
+    const aText = a.querySelector("h2")?.innerText || "";
+    const bText = b.querySelector("h2")?.innerText || "";
+    return aText.localeCompare(bText);
+  });
+  const newOrder = [...group1, ...group2];
+  newOrder.forEach((award) => awardsContainer.appendChild(award));
 }
 function sharePredictions() {
   const radios = Array.from(document.querySelectorAll('input[type="radio"]'));
